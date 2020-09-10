@@ -1,0 +1,24 @@
+server:
+  port: 9011
+
+#数据库连接
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/project_qihang?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.boss.trainee_sailer_service.entity
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+  #输出sql语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

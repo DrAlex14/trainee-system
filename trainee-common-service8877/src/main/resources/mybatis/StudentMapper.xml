@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bosssoft.trainee.dao.StudentDao" >
+    <resultMap id="studentMap" type="StudentDTO">
+        <id column="id" property="id" jdbcType="INT"></id>
+        <result column="work_id" property="workId" jdbcType="INT" ></result>
+        <result column="name" property="name"  jdbcType="VARCHAR"></result>
+        <result column="sex" property="sex"  jdbcType="VARCHAR"></result>
+        <result column="id_card" property="idCard"  jdbcType="VARCHAR"></result>
+        <result column="telephone" property="telephone"  jdbcType="VARCHAR"></result>
+        <result column="school" property="school"  jdbcType="VARCHAR"></result>
+        <result column="perfession" property="profession"  jdbcType="VARCHAR"></result>
+        <result column="education" property="education" jdbcType="VARCHAR" ></result>
+        <result column="area_province" property="areaProvince"  jdbcType="VARCHAR"></result>
+        <result column="area_city" property="areaCity" jdbcType="VARCHAR" ></result>
+        <result column="work_province" property="workProvince" jdbcType="VARCHAR" ></result>
+        <result column="work_city" property="workCity" jdbcType="VARCHAR" ></result>
+        <result column="class_id" property="classId" jdbcType="INT"></result>
+        <result column="status" property="status" jdbcType="INT"></result>
+        <result column="version" property="version" jdbcType="INT"></result>
+        <result column="creator_id" property="creatorId" jdbcType="INT"></result>
+        <result column="updater_id" property="updaterId" jdbcType="INT"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+        <result></result>
+    </resultMap>
+  <select id="getStudentList" resultMap="studentMap">
+        select
+  </select>
+
+</mapper>
+

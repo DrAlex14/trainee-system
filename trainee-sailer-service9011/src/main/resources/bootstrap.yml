@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: trainee_sailer_service
+  main:
+    allow-bean-definition-overriding: true  #放置bean重复覆盖，springboot2.1需要设置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 6e672b6f-03b7-4485-bc0a-6f2650965e13
+        cluster-name: DEFAULT
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: 6e672b6f-03b7-4485-bc0a-6f2650965e13
+        group: TRAINEE_GROUP
